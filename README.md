@@ -1,4 +1,4 @@
-## Smart Parking
+## Smart Parking Database
 
 ## Install Required Libraries
   `$ virtualenv env`
