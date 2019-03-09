@@ -20,3 +20,5 @@ def getJSON():
 
 if __name__ == '__main__':
     updateSpot(5,occupied)
+    updateSpot(1,empty)
+    updateSpot(2,empty)
