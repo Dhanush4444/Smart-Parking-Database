@@ -1,5 +1,5 @@
 import requests as req
-
+import random as ra
 #ONLY 6 PARKING SPOTS
 
 empty = 'EMPTY'
@@ -18,7 +18,20 @@ def getJSON():
     print(d)
 
 
-if __name__ == '__main__':
-    updateSpot(5,occupied)
-    updateSpot(1,empty)
-    updateSpot(2,empty)
+while True:
+    if ra.randint(0,4) % 2 ==0:
+     updateSpot(3,occupied)
+    else:
+     updateSpot(3,empty)
+    if ra.randint(0,4) % 2 ==0:
+     updateSpot(2,occupied)
+    else:
+     updateSpot(2,empty)
+    if ra.randint(0,4) % 2 ==0:
+     updateSpot(1,occupied)
+    else:
+     updateSpot(1,empty)
+    if ra.randint(0,4) % 2 ==0:
+     updateSpot(4,occupied)
+    else:
+     updateSpot(4,empty)
